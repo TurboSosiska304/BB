@@ -149,12 +149,12 @@ function breast_mass_js({a=null,b=null,c=null,bust=null,underbust=null,r_sosok=1
   let analog_one = '';
   if (M_grud_kg < 0.5) analog_one = 'практически плоская, 1 размер';
   else if (M_grud_kg < 0.9) analog_one = 'помещается в ладонь (2 размер)';
-  else if (M_grud_kg < 1.3) analog_one = 'примерно мужская пригоршня (3 размер)';
+  else if (M_grud_kg < 1.3) analog_one = 'Немного больше ладони (3 размер)';
   else analog_one = 'в ладонь не помещается, 4+ размер';
   let analog_both = '';
   if (M_total_kg < 1.0) analog_both = 'две груди вместе маленькие';
   else if (M_total_kg < 2.0) analog_both = 'две груди помещаются в руки';
-  else if (M_total_kg < 2.6) analog_both = 'две груди как две пригоршни';
+  else if (M_total_kg < 2.6) analog_both = 'две груди немного больше двух рук';
   else analog_both = 'очень крупные, больше двух рук';
   return {M_grud_kg,M_total_kg,analog_one,analog_both};
 }
